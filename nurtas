@@ -1,0 +1,65 @@
+2
+ 
+# Вычитание
+b = 10 - 4
+print("Вычитание:", b)  
+
+# Умножение
+c = 6 * 7
+print("Умножение:", c)  
+
+# Возведение в степень
+d = 2 ** 3
+print("Возведение в степень:", d)  
+
+# Деление
+e = 15 / 4
+print("Деление:", e)  
+
+# Целочисленное деление
+f = 15 // 4
+print("Целочисленное деление:", f)  
+
+# Остаток от деления
+g = 15 % 4
+print("Остаток от деления:", g)  
+
+
+4
+# Пример: печатаем числа от 1 до 5
+i = 1
+while i <= 5:
+    print("while:", i)
+    i += 1
+
+for i in range(1, 6):
+    print(f"Квадрат числа {i} равен {i ** 2}")
+
+
+5
+1.
+lst = [1, 2, 3, 4, 5]
+reversed_lst = lst[::-1]
+print("Обратный порядок:", reversed_lst)
+
+2.
+def list_sort(lst):
+    return sorted(lst, key=abs, reverse=True)
+
+# Пример:
+nums = [3, -10, 5, -2, 0]
+sorted_nums = list_sort(nums)
+print("Сортировка по убыванию |x|:", sorted_nums)
+
+3.
+def change(lst):
+    lst[0], lst[-1] = lst[-1], lst[0]
+    return lst
+
+# Пример:
+sample = [10, 20, 30, 40]
+changed = change(sample)
+print("После замены:", changed)
+
+
+
